@@ -6,10 +6,10 @@ class QuestionsController < ApplicationController
   def answer
     if params[:answer].include?("?")
       @answer = 'Silly question, get dressed and go to work!'
-    elsif params[:answer] == 'I am going to work'
+    elsif params[:answer].downcase == 'i am going to work'
       @answer = 'Great!'
     else
-      "I don't care, get dressed and go to work!"
+      @answer = "I don't care, get dressed and go to work!"
     end
   end
 end
