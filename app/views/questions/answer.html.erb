@@ -1,0 +1,18 @@
+<div class="container">
+<h1> Stupid coaching </h1>
+
+  <div class="border-start border-5 px-3 my-3">
+    <ul class = "list-unstyled py-2">
+      <li><%= params[:answer] %></li>
+      <li><em> - You</em></li>
+    </ul>
+  </div>
+  <div class="bg-warning bg-opacity-10 border-start border-5 px-3 my-3">
+    <ul class = "list-unstyled py-2" >
+      <li><%= @answer %></li>
+      <li><em> - Your coach</em></li>
+    </ul>
+  </div>
+
+<%= link_to "Ask a new question", ask_path %>
+</div>
